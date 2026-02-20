@@ -1,0 +1,174 @@
+:root {
+  --bg: #f8f9fb;
+  --text: #222;
+  --muted: #555;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --link: #2563eb;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --card-bg: #1e293b;
+  --border: #334155;
+  --link: #60a5fa;
+}
+
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Layout container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Hero section */
+.hero {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 600px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--link);
+}
+
+/* Professsional works styling  */
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 700px;
+  margin-top: 15px;
+}
+
+.title-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 40px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.title-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.title-header h3 {
+  margin-bottom: 5px;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.contributions {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.contributions li {
+  margin-bottom: 8px;
+}
+
+.background {
+  margin-top: 60px;
+}
+
+/* Personal Projects */
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 25px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+
+.project-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 500;
+}
